@@ -1,0 +1,83 @@
+
+
+:root {
+    --color-overflow: #000000;
+    --font-main: Inter
+}
+body {
+    background: radial-gradient(circle at right, #e7adfb, #abe4ff,#fbebda);
+    font-family: 'Vivid', 'Helvetica', sans-serif, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+    html {
+     line-height: 1.15;
+     -webkit-text-size-adjust: 100%;
+    }
+h1{ font-size: 35px; /* propertyvalue */
+    color:darkblue; /* declaration */
+    font-weight:bold;
+    font-style:bold;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: 10rem;
+    text-align: center;
+     margin: auto;
+    height: 220px;
+    padding: 16px;
+    border-bottom: 4px solid white;
+}
+
+h2 { font-size: 24px;
+    color:darkmagenta;
+    font-weight: bold;
+    font-style: normal;
+    letter-spacing: -.2px;
+    line-height: 3rem; 
+}
+    
+h3 {
+        font-size: 22px;
+    color: darkblue;
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: -.2px;
+    line-height: 2rem;
+ }
+/*paragraph sections*/
+p { font-size: 20px; 
+    color: rgb(31, 72, 72);
+    font-weight: normal;
+    margin-left: auto;
+    font-size: 16px;
+   line-height: 2rem;
+   letter-spacing: -.2px;
+
+}
+/*buttons */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: none;
+    margin-top: 20px;
+}
+.double-button { 
+    background-color: indigo;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: auto;
+  
+}
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
