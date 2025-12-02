@@ -1,10 +1,10 @@
 
 :root {
-    --color-overflow: #000000;
-    --font-main: Inter;
-     background: radial-gradient(circle at right, #e7adfb, #abe4ff,#fbebda);
-}
-/*Custom Font */
+    --font-main:'Helvetica';
+    --font-title: 'spicy-sale';
+     background: radial-gradient(circle at right, #e7adfb, #abe4ff,#fbebda);}
+
+ /*Custom Font For main Header*/
 @font-face {
 
     font-family: 'spicy-sale';
@@ -12,9 +12,17 @@
          url(Fonts/spicy-sale.woff) format("woff"),
          url(Fonts/spicy-sale.ttf) format("truetype");
 }
- html {line-height: 1.15;
+/*-------AllerBold header 2-----------*/
+@font-face {
+    font-family:'allerbold';
+    src: url(Fonts/aller.bold-webfont.woff2) format("woff2"),
+         url(Fonts/aller.bold-webfont.woff) format("woff"),
+         url(Fonts/aller.bold.ttf) format("truetype");
+}
+html {line-height: 1.15;
      -webkit-text-size-adjust: 100%;
  margin: 0;
+ 
 }
 body {
     font-family: 'spicy-sale.regular.ttf','Merriweather','Vivid','sans-serif';
@@ -22,53 +30,52 @@ body {
     max-width: 600px;
     margin: 0 auto;
 }
+.nav-bar {
+    display: flex;
+    align-items:flex-end;
+    justify-content:space-between;
+}
 
-/*----------------------HEADER/TITLE-----------------------*/
+/*-------------------HEADER/TITLE-----------------------*/
 h1 { 
 font-family: 'spicy-sale';
 font-size: 40px;
 color: darkblue;
 text-transform: uppercase;
-letter-spacing: 0.5px;
+letter-spacing: 1.5px;
 align-items: center;
   background-color: rgb(250, 212, 255);
     margin: 0;
-line-height: 3rem;
-    padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
+line-height: 50px;
+    padding: 20px;
+    margin-bottom: 4px;
+    border: 1px solid rgb(106, 16, 142);
     border-radius: 16px;
-    border-bottom: 4px solid white;
     vertical-align: baseline;
+    box-shadow: white 0 0 10px;
    box-sizing: border-box; 
      position: relative
 
 }
 /*header section*/
 h2 {
-    font-size: 26px;
+    font-family: 'Allerbold';
+    font-size: 29px;
   color:darkmagenta;
-    font-weight: bold;
+    font-weight:bolder;
     font-style:normal;
     text-transform: uppercase;
     letter-spacing: .5px;
-    line-height: 4.5rem;
+    line-height: 2rem;
     text-align: center;
-    margin: 0;
-    height: 220px;
+    margin-top: 20px;
+    height: 100px;
     padding: 10px;
 }
-
-
-h2 { font-size: 24px;
-    color:darkmagenta;
-    font-weight: bold;
-    font-style: normal;
-    letter-spacing: -.2px;
-    line-height: 3rem; 
-}
-    
+/*Header 3 section*/ 
 h3 {
-        font-size: 22px;
+    font-family: 'Allerbold';
+    font-size: 22px;
     color: darkblue;
     font-weight: normal;
     font-style: normal;
@@ -77,35 +84,53 @@ h3 {
  }
 /*paragraph sections*/
 p { font-size: 20px; 
+    font-family:'Helvetica';
     color: rgb(31, 72, 72);
     font-weight: normal;
    text-indent: relative;
-    text-align: left;
-    margin-left: auto;
+    text-align: middle;
+    margin-left: 16px;
     margin-right: 2rem;
     font-size: 16px;
    line-height: 2rem;
    letter-spacing: -.2px;
 
 }
-/*buttons */
-.button-group {
-    
-.double-button {
- display: flex;
+/* -----HERO SECTION FOR HOME PAGE-----*/
+.hero {
+    height: 100px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: none;
-    margin-top: 20px;
-}
-    background-color: indigo;
-    border-radius: 2px;
-    border: none;
-    color: white;
-    padding: 20px;
+    align-items: center;
     text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 4px;
-    cursor: auto;   
+    background: radial-gradient(circle at top left, #e7adfb40,transparent 60%),
+    radial-gradient(circle at bottom right, #abe4ff50,transparent 70%),
+    radial-gradient(circle at top right, #fbebda40,transparent 70%);
+}
+/*hero title*/
+.hero-title {
+    font-family: 'spicy-sale';
+    font-size: 2.6rem;
+    line-height: 1.2;
+    color: darkblue;
+    margin: 0 2.5rem 0;
+}
+/*Rounded button*/
+.hero-button {
+    display: block;
+    width: 50%;
+    align-items:flex-start;
+    padding: 1rem 0;
+    background:radial-gradient(circle at top left, #e7adfb, #083986,#f765b7);
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: 'allerbold';
+    font-size: 1.1rem;
+    text-align: center;
+    transition: transform 0.15s ease,opacity 0.2s ease;
 }
