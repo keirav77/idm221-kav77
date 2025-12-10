@@ -174,16 +174,15 @@ ul {
 
 .project-img {
     width: 85%;
-    max-width: 290px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
+    max-width: 250px;
+   object-fit: cover;
     margin-right: 65px;
 }
 
 .seniorportrait
  {
  margin: 10px;
+margin-top: 20px;
 border-radius: 25px;
 height: 280px;
 width: 260px;
