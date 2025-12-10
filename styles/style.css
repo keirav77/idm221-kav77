@@ -20,7 +20,6 @@
          url(Fonts/aller.bold.ttf) format("truetype");
 }
 html {line-height: 1.15;
-     -webkit-text-size-adjust: 100%;
  margin: 0;
  
 }
@@ -32,9 +31,44 @@ body {
 }
 .nav-bar {
     display: flex;
-    align-items:flex-end;
+    align-items: center;
     justify-content:space-between;
 }
+
+
+.logo, .portfoliologo {
+    display: inline;
+    align-items: center;
+    vertical-align: bottom;
+}
+.logo {
+    width: 50px;
+    height: 50px;
+}
+.portfoliologo {
+    width: 80px;
+    height: 60px;
+}
+.nav-button {
+    display:inline-block;
+    vertical-align: baseline;
+   font-size: 14px;
+    padding: 4px;
+    text-align: center;
+    background-color: #d8f1fa;
+    color: #d047f2;
+    font-family: "allerbold";
+    margin-top: 16px;
+    padding: 4px 5px;
+    text-decoration: none;
+    border: 2px solid #180364;
+    border-radius: 5px;
+   
+
+}
+
+
+
 
 /*-------------------HEADER/TITLE-----------------------*/
 h1 { 
@@ -89,11 +123,10 @@ p { font-size: 20px;
     font-family:'Helvetica';
     color: rgb(31, 72, 72);
     font-weight: normal;
-   text-indent: relative;
-    text-align: middle;
-    margin-left: 20px;
-    
-    margin-right: 2rem;
+   text-indent: 10px;
+    text-align:justify;
+    margin-left: 15px;
+    margin-right: 20px;
     font-size: 16px;
    line-height: 2rem;
    letter-spacing: -.2px;
@@ -121,7 +154,7 @@ ul {
 .hero-button {
     display: block;
     width: 50%;
-    align-items:flex-start;
+    align-items:center;
     padding: 1rem 0;
     background:radial-gradient(circle at top left, #e7adfb, #083986,#f765b7);
     color: white;
@@ -131,6 +164,34 @@ ul {
     font-size: 1.1rem;
     text-align: center;
     transition: transform 0.15s ease-in,opacity 0.2s ease-out;
+}
+/*Header images*/
+.header-image {
+    width: 100%;
+    height: auto; 
+    object-fit: cover;
+}
+
+.project-img {
+    width: 85%;
+    max-width: 290px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    margin-right: 65px;
+}
+
+.seniorportrait
+ {
+ margin: 10px;
+border-radius: 25px;
+height: 280px;
+width: 260px;
+object-fit: contain;
+display: block;
+position: relative;
+align-items: center;
+margin-left: 85px;
 }
 /*Skills images */
 .illustrator,
@@ -147,7 +208,7 @@ object-fit: contain;
 display: block;
 position: relative;
 margin-left: 90px;
-
+align-items: center;
 }
 .photoshop
 { 
@@ -158,56 +219,36 @@ width: 200px;
 object-fit: contain;
 display: block;
 position: relative;
+align-items: center;
 margin-top: 22px;
 margin-left: 90px;
 margin-bottom: auto;
 }
-.figma
-{
-   margin: 1px;
-border-radius: 40px;
-height: 250px;
-width: 220px;
-object-fit: contain;
-display: block;
-position: relative;
-margin-left: 80px;
-}
 
-.seniorportrait,
-.ocean
- {
- margin: 10px;
-border-radius: 25px;
-height: 200px;
-width: 200px;
-object-fit: contain;
-display: block;
-position: relative;
-margin-left: 90px;
-}
+
+
 .vscode
 {
 margin: 10px;
 border-radius: 40px;
-height: 175px;
-width: 175px;
+height: 160px;
+width: 150px;
 object-fit: contain;
 display: block;
 position: relative;
-margin-top: 22px;
+margin-top: 20px;
 margin-left: 95px;
 margin-bottom: auto;
+align-items: center;
+}
+.image-row {
+    object-fit:contain;
+margin-left: 70px;
+margin-right: 5px;
 }
 
-@media (max-width: 600px) {
-    body {
-        padding: 10px;
-        align-items: flex-start;
-    
-    }
-    
-}
+
+
 
 /*-----video frame------*/
 .video-container {
