@@ -66,11 +66,11 @@ h2 {
     font-style:normal;
     text-transform: uppercase;
     letter-spacing: .5px;
-    line-height: 2rem;
+    line-height: 30px;
     text-align: center;
     margin-top: 20px;
-    height: 100px;
-    padding: 10px;
+     height: 50px; 
+    padding: 5px;
 }
 /*Header 3 section*/ 
 h3 {
@@ -81,6 +81,8 @@ h3 {
     font-style: normal;
     letter-spacing: -.2px;
     line-height: 2rem;
+    text-align: left;
+    margin-left: 16px;
  }
 /*paragraph sections*/
 p { font-size: 20px; 
@@ -89,12 +91,15 @@ p { font-size: 20px;
     font-weight: normal;
    text-indent: relative;
     text-align: middle;
-    margin-left: 16px;
+    margin-left: 20px;
+    
     margin-right: 2rem;
     font-size: 16px;
    line-height: 2rem;
    letter-spacing: -.2px;
-
+}
+ul {
+    font-family:'Allerbold';
 }
 /* -----HERO SECTION FOR HOME PAGE-----*/
 .hero {
@@ -111,14 +116,7 @@ p { font-size: 20px;
     radial-gradient(circle at bottom right, #abe4ff50,transparent 70%),
     radial-gradient(circle at top right, #fbebda40,transparent 70%);
 }
-/*hero title*/
-.hero-title {
-    font-family: 'spicy-sale';
-    font-size: 2.6rem;
-    line-height: 1.2;
-    color: darkblue;
-    margin: 0 2.5rem 0;
-}
+
 /*Rounded button*/
 .hero-button {
     display: block;
@@ -132,5 +130,91 @@ p { font-size: 20px;
     font-family: 'allerbold';
     font-size: 1.1rem;
     text-align: center;
-    transition: transform 0.15s ease,opacity 0.2s ease;
+    transition: transform 0.15s ease-in,opacity 0.2s ease-out;
+}
+/*Skills images */
+.illustrator,
+.figma,
+.google,
+.vscode,
+.canva
+{
+margin: 10px;
+border-radius: 25px;
+height: 200px;
+width: 200px;
+object-fit: contain;
+display: block;
+position: relative;
+margin-left: 90px;
+
+}
+.photoshop
+{ 
+margin: 10px;
+border-radius: 40px;
+height: 200px;
+width: 200px;
+object-fit: contain;
+display: block;
+position: relative;
+margin-top: 22px;
+margin-left: 90px;
+margin-bottom: auto;
+}
+.figma
+{
+   margin: 1px;
+border-radius: 40px;
+height: 250px;
+width: 220px;
+object-fit: contain;
+display: block;
+position: relative;
+margin-left: 80px;
+}
+
+.seniorportrait,
+.ocean
+ {
+ margin: 10px;
+border-radius: 25px;
+height: 200px;
+width: 200px;
+object-fit: contain;
+display: block;
+position: relative;
+margin-left: 90px;
+}
+.vscode
+{
+margin: 10px;
+border-radius: 40px;
+height: 175px;
+width: 175px;
+object-fit: contain;
+display: block;
+position: relative;
+margin-top: 22px;
+margin-left: 95px;
+margin-bottom: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        align-items: flex-start;
+    
+    }
+    
+}
+
+/*-----video frame------*/
+.video-container {
+  width: 50%;
+  margin: 20px auto;
+}
+.video-container video {
+    width: 100%;
+    height: auto;
 }
