@@ -1,10 +1,12 @@
 {
 	"folders": [
 		{
-			"path": ".."
+			"name": "IDM221-kav77",
+			"path": "."
 		},
 		{
-			"path": "."
+			"name": "portfolio",
+			"path": ".."
 		}
 	],
 	"settings": {}
